@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+<script>    
+    function increment() {
+        let count = parseInt(document.getElementById("counter").innerHTML);
+        alert(count);
+        count++;
+        counter.innerHTML = count;
+    }
 </script>
 
-</body>
+</head>
+<body>
 
+<p id="counter">0</p>
+<button id="incrementBtn" onClick="increment()">Increment</button>
+
+</body>
 </html>
